@@ -1,4 +1,4 @@
-# 1325-signup
+# slack poll bot
 Team 1325 custom Slack integration to allow members to sign up during build season
 - cool people
 
