@@ -1,15 +1,69 @@
+# coolest electrical lead B)
+#       *
+#    /((/((((#%%/
+#     #%&@((&%##*
+#     (##(####%(    **
+#    (%%&&&&&&&%%%#/
+# /##%%&&&&&&&&&%*
+#  /#%%&&&&&&&&&#
+#    (%%&&&&&&&&%#*
+#     #%%%&&&&&&&&#
+#     (%%%%%%%&&&&&%/
+#    (#%%%%%%&&&&&&%#/
+#     (#%%%%%%%%%&%*
+#     (#%%/     %%(
+#      (#*      #%(
+#      *        (#/
+
+# mango man
+#          ,,,,      ........
+#        ,,,,,,,,..............
+#       ,****,,*,....,.,.........
+#     **/*****,,,,,,.,,.............
+#    //(//*/*,,**,,,,,..,.,...........
+#   /#(((//*****/**,,,*,,*,,,...........
+#  (((#(#(///**/(*//**//,,,,,,,,.....,...
+# /######(((#((///(/*/*****,,,,.,...... .,
+# (###((####(##(((/(/*/*/*****,,,,...,.. .
+# (#####((((###(#(((/////******,,,,..... ..
+# *######(##(((((#(((((/***/***,,*,,,......
+#  (########((((#((((((///*******,,,,,.....
+#   (###(####(((#((((((/(///******,,.......
+#    (######((((#(((((((/////*/**,,,,,,...,
+#     (#####((((((((((//////*******,,,.....
+#      ((#(#((#((((((((((/////**,,*,,,.,,,
+#        (####((#(((#(///////****,,,,,,,,
+#         ((((((((((///////****,,*,,,,,,
+#           (#((#((/(/////****,,,,,,,,.
+#             /((//////***,*,,,,,,,,
+#                ******,,,,,,,,,,..
+#                    .,..,,,,.
+
+import json
 import os
+from time import sleep
+
+from dotenv import load_dotenv
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
-from time import sleep
-from dotenv import load_dotenv
 
 load_dotenv()
 slack_token = os.getenv("SLACK_TOKEN")
 client = WebClient(token=slack_token)
+prev_message = None
 
-MENTION_LIMIT = 1
+MENTION_LIMIT = 2
+emojis = ["one", "two", "three", "four", "five", "six", "seven"]
 
+
+# for next variation of shitass program
+# @dataclass
+# class Message:
+#     timestamp: str
+#     channel_id: str
+#     question: str
+#     options: List[str]
+#     user_reactions: Dict[int, Set]
 
 def create_poll(channel_id, question, options):
     try:
@@ -40,7 +94,6 @@ def read_reactions(channel_id, message_ts):
 
 
 def add_reactions(channel_id, message_ts):
-    emojis = ["one", "two", "three", "four", "five", "six", "seven"]
     for emoji in emojis:
         try:
             client.reactions_add(
@@ -53,83 +106,89 @@ def add_reactions(channel_id, message_ts):
             print(f"Error adding reaction: {e.response['error']}")
 
 
-def update_poll_message(channel_id, message_ts, options, user_reactions):
-    options_text = "\n".join(
-        f"{i + 1}. {opt} - {', '.join(user_reactions.get(i + 1, []))}" for i, opt in enumerate(options))
+def update_poll_message(channel_id, message_ts, options, user_reactions, question):
+    global prev_message
+
+    options_text = ""
+
+    for i, opt in enumerate(options):
+        sub_options_text = ""
+        reactions = user_reactions.get(i + 1, [])
+
+        if len(reactions) > 0:
+            sub_options_text += ', '.join(f'<@{reactions[i]}>' for i in range(min(len(reactions), MENTION_LIMIT)))
+
+        options_text += f"{i + 1}. {opt} - {sub_options_text}\n"
+
     poll_message = f"*{question}*\n{options_text}"
+    if prev_message != poll_message:
+        try:
+            client.chat_update(
+                channel=channel_id,
+                ts=message_ts,
+                text=poll_message
+            )
+            print("Poll message updated.")
+            prev_message = poll_message
+            try:
+                with open('poll.json', 'r+') as f:
+                    data = {
+                        'channel_id': channel_id,
+                        'message_ts': message_ts,
+                        'options': options,
+                        'question': question,
+                    }
+                    json.dump(data, f)
+                    print("Poll backed up")
+            except Exception as e:
+                print(f"json exploded{e}")
 
-    try:
-        client.chat_update(
-            channel=channel_id,
-            ts=message_ts,
-            text=poll_message
-        )
-        print("Poll message updated.")
-    except SlackApiError as e:
-        print(f"Error updating message: {e.response['error']}")
+        except SlackApiError as e:
+            print(f"Error updating message: {e.response['error']}")
 
 
-def track_user_reactions(reactions, user_reactions, reaction_queues):
+def track_user_reactions(reactions, user_reactions):
     for reaction in reactions:
         emoji = reaction['name']
-        if emoji in ["one", "two", "three", "four", "five", "six", "seven"]:
-            option_index = ["one", "two", "three", "four", "five", "six", "seven"].index(emoji) + 1
-            for user in reaction['users']:
-                if user != "U07ML8X2DE1":
-                    if len(user_reactions[option_index]) < MENTION_LIMIT:
-                        user_reactions[option_index].add(f"<@{user}>")
-                        reaction_queues[option_index].append(user)
-
-
-def remove_user_reactions(previous_reactions, current_reactions, user_reactions, reaction_queues):
-    current_reaction_users = {
-        emoji: {user for reaction in current_reactions if reaction['name'] == emoji for user in reaction['users']} for
-        emoji in ["one", "two", "three", "four", "five", "six", "seven"]}
-
-    for reaction in previous_reactions:
-        emoji = reaction['name']
-        if emoji in ["one", "two", "three", "four", "five", "six", "seven"]:
-            option_index = ["one", "two", "three", "four", "five", "six", "seven"].index(emoji) + 1
-            for user in reaction['users']:
-                if user != "U07ML8X2DE1":
-                    if user not in current_reaction_users[emoji]:
-                        user_reactions[option_index].discard(f"<@{user}>")
-                        reaction_queues[option_index].remove(user)
-
-                        if reaction_queues[option_index]:
-                            next_user = reaction_queues[option_index].pop(0)
-                            user_reactions[option_index].add(f"<@{next_user}>")
+        if emoji in emojis:
+            option_index = emojis.index(emoji) + 1
+            reaction['users'].remove("U07ML8X2DE1")
+            user_reactions[option_index] = reaction['users']
 
 
 def init_user_reactions(options):
     return {i + 1: set() for i in range(len(options))}
 
 
-def init_reaction_queues(options):
-    return {i + 1: [] for i in range(len(options))}
-
-
-if __name__ == "__main__":
-    channel_id = "C07NBTGJ97A"
-    question = "bomboclat"
-    options = ["aaron", "pinto", "hhhhh", "guhhh", "fortnite", "faowehiawer", "rawehioariw"]
-
-    message_ts = create_poll(channel_id, question, options)
-    sleep(1)
-    add_reactions(channel_id, message_ts)
+def main():
+    try:
+        with open('poll.json', 'r') as f:
+            data = json.load(f)
+        message_ts = data["message_ts"]
+        channel_id = data["channel_id"]
+        question = data["question"]
+        options = data["options"]
+    except Exception as e:
+        with open('poll.json', 'w'):
+            pass
+        channel_id = "C07NBTGJ97A"
+        question = "bomboclat"
+        options = ["aaron", "pinto", "hhhhh", "guhhh", "fortnite", "faowehiawer", "rawehioariw"]
+        print(f"JSON error {e}")
+        message_ts = create_poll(channel_id, question, options)
+        sleep(1)
+        add_reactions(channel_id, message_ts)
 
     user_reactions = init_user_reactions(options)
-    reaction_queues = init_reaction_queues(options)
-
-    previous_reactions = []
 
     while True:
         current_reactions = read_reactions(channel_id, message_ts)
-        if current_reactions:
-            track_user_reactions(current_reactions, user_reactions, reaction_queues)
-            update_poll_message(channel_id, message_ts, options, {k: list(v) for k, v in user_reactions.items()})
-            remove_user_reactions(previous_reactions, current_reactions, user_reactions, reaction_queues)
-            update_poll_message(channel_id, message_ts, options, {k: list(v) for k, v in user_reactions.items()})
-            previous_reactions = current_reactions
 
-        sleep(2)
+        if current_reactions:
+            track_user_reactions(current_reactions, user_reactions)
+            update_poll_message(channel_id, message_ts, options, {k: list(v) for k, v in user_reactions.items()}, question)
+            sleep(0.1)
+
+
+if __name__ == "__main__":
+    main()
