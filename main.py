@@ -1,3 +1,60 @@
+guh = """coolest electrical lead B)
+
+       *
+    /((/((((#%%/
+     #%&@((&%##*
+     (##(####%(    **
+    (%%&&&&&&&%%%#/
+ /##%%&&&&&&&&&%*
+  /#%%&&&&&&&&&#
+    (%%&&&&&&&&%#*
+     #%%%&&&&&&&&#
+     (%%%%%%%&&&&&%/
+    (#%%%%%%&&&&&&%#/
+     (#%%%%%%%%%&%*
+     (#%%/     %%(
+      (#*      #%(
+      *        (#/
+
+            ____                                                                ____
+          ,'  , `.                                                            ,'  , `.                        
+       ,-+-,.' _ |                 ,---,               ,---.               ,-+-,.' _ |                 ,---,  
+    ,-+-. ;   , ||             ,-+-. /  |  ,----._,.  '   ,'\           ,-+-. ;   , ||             ,-+-. /  | 
+   ,--.'|'   |  || ,--.--.    ,--.'|'   | /   /  ' / /   /   |         ,--.'|'   |  || ,--.--.    ,--.'|'   | 
+  |   |  ,', |  |,/       \  |   |  ,"' ||   :     |.   ; ,. :        |   |  ,', |  |,/       \  |   |  ,"' | 
+  |   | /  | |--'.--.  .-. | |   | /  | ||   | .\  .'   | |: :        |   | /  | |--'.--.  .-. | |   | /  | | 
+  |   : |  | ,    \__\/: . . |   | |  | |.   ; ';  |'   | .; :        |   : |  | ,    \__\/: . . |   | |  | | 
+  |   : |  |/     ," .--.; | |   | |  |/ '   .   . ||   :    |        |   : |  |/     ," .--.; | |   | |  |/  
+  |   | |`-'     /  /  ,.  | |   | |--'   `---`-'| | \   \  /         |   | |`-'     /  /  ,.  | |   | |--'   
+  |   ;/        ;  :   .'   \|   |/       .'__/\_: |  `----'          |   ;/        ;  :   .'   \|   |/       
+  '---'         |  ,     .-./'---'        |   :    :                  '---'         |  ,     .-./'---'        
+                 `--`---'                  \   \  /                                  `--`---'                 
+                                            `--`-'                                                            
+         ,,,,      ........
+        ,,,,,,,,..............
+       ,****,,*,....,.,.........
+     **/*****,,,,,,.,,.............
+    //(//*/*,,**,,,,,..,.,...........
+   /#(((//*****/**,,,*,,*,,,...........
+  (((#(#(///**/(*//**//,,,,,,,,.....,...
+ /######(((#((///(/*/*****,,,,.,...... .,
+ (###((####(##(((/(/*/*/*****,,,,...,.. .
+ (#####((((###(#(((/////******,,,,..... ..
+ *######(##(((((#(((((/***/***,,*,,,......
+  (########((((#((((((///*******,,,,,.....
+   (###(####(((#((((((/(///******,,.......
+    (######((((#(((((((/////*/**,,,,,,...,
+     (#####((((((((((//////*******,,,.....
+      ((#(#((#((((((((((/////**,,*,,,.,,,
+        (####((#(((#(///////****,,,,,,,,
+        ((((((((((///////****,,*,,,,,,
+           (#((#((/(/////****,,,,,,,,.
+             /((//////***,*,,,,,,,,
+               ******,,,,,,,,,,..
+                    .,..,,,,.
+"""
+
+import logging
 import json
 import os
 import time
@@ -14,7 +71,9 @@ POLL_FILE = "polls.json"
 POLL_PROCESSES_FILE = "poll_processes.json"
 poll_processes = {}
 POLL_PERMS = "perms.json"
-logfile = open("log.txt", "a")
+logger = logging.getLogger(__name__)
+logging.basicConfig(filename='log.log', level=logging.INFO)
+logger.info('Started')
 
 def is_valid_rq(say, polls, rq_channel_id, rq_user_id, rq_poll_id=None):
     level = perms.get(rq_user_id, None)
@@ -93,7 +152,7 @@ def process_poll(polls, poll_id, channel_id):
             timestamp=poll['timestamp']
         )
     except Exception as e:
-        logfile.write(f"Error fetching reactions: {e}")
+        logger.info(f"Error fetching reactions: {e}")
         return
 
     for emoji in stripped_emojis:
@@ -142,7 +201,7 @@ def update_poll_results(channel_id, poll_id, polls):
                 text=result_message
             )
         except Exception as e:
-            logfile.write(f"Failed to update message: {e}")
+            logger.info(f"Failed to update message: {e}")
 
 
 def create_poll(channel_id, question, options, emojis, duration, max_mentions, polls, poll_id=None):
@@ -175,7 +234,7 @@ def create_poll(channel_id, question, options, emojis, duration, max_mentions, p
                     timestamp=poll_ts
                 )
             except Exception as e:
-                logfile.write(f"Failed to add reaction '{emoji}': {e}")
+                logger.info(f"Failed to add reaction '{emoji}': {e}")
 
         poll_data.update({
             'options': options,
@@ -188,7 +247,7 @@ def create_poll(channel_id, question, options, emojis, duration, max_mentions, p
 
         polls[poll_id] = poll_data
         save_polls_to_file(polls)
-        logfile.write(f"create poll {polls}")
+        logger.info(f"create poll {polls}")
 
     while True:
         if not polls.get(poll_id, None):
@@ -221,7 +280,7 @@ def cleanup_poll(polls, poll_id, channel_id):
             text=result_message
         )
     except Exception as e:
-        logfile.write(f"Failed to update message: {e}")
+        logger.info(f"Failed to update message: {e}")
 
     polls.pop(poll_id, None)
     save_polls_to_file(polls)
@@ -354,7 +413,7 @@ if __name__ == "__main__":
         try:
             perms = json.load(file)
         except json.JSONDecodeError as e:
-            logfile.write(f"Failed to load permissions: {e}")
+            logger.info(f"Failed to load permissions: {e}")
 
     manager = Manager()
     polls = manager.dict(load_polls_from_file())
