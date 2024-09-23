@@ -154,21 +154,28 @@ def process_poll(polls, poll_id, channel_id):
     except Exception as e:
         logger.info(f"Error fetching reactions: {e}")
         return
-
+    voted = []
     for emoji in stripped_emojis:
+        user_mentions = []
         reaction_data = next((r for r in reaction['message']['reactions'] if r['name'] == emoji), None)
         if reaction_data:
-            user_mentions = []
+            max_mentions = int(max_mentions)
             limit = max_mentions + 1 if max_mentions >= 0 else len(reaction_data['users'])
             for user in reaction_data['users'][:limit]:
                 user_info = app.client.users_info(user=user)
                 if user_info['user']['id'] != "U07ML8X2DE1":
-                    user_mentions.append(f"<@{user_info['user']['id']}>")
+                    if user_info not in voted:
+                        user_mentions.append(f"<@{user_info['user']['id']}>")
 
-            poll_results[emoji] = {
-                "count": reaction_data['count'] - 1,
-                "users": ', '.join(user_mentions)
-            }
+            if int(poll['option_count']) != 1:
+                voted = []
+
+            if user_mentions not in voted:
+                poll_results[emoji] = {
+                    "count": reaction_data['count'] - 1,
+                    "users": ', '.join(user_mentions)
+                }
+                voted.append([f"<@{user_info['user']['id']}>"])
         else:
             poll_results[emoji] = {
                 "count": 0,
@@ -181,19 +188,21 @@ def process_poll(polls, poll_id, channel_id):
 def update_poll_results(channel_id, poll_id, polls):
     if polls.get(poll_id, None):
         poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-
+        if int(poll['option_count']) == 1:
+            option_msg = "One vote"
+        else:
+            option_msg = "Unlimited votes"
         remaining_time = poll['duration'] * 3600 - (time.time() - poll['start_time'])
         remaining_minutes = max(0, int(remaining_time // 60))
         remaining_seconds = int(remaining_time % 60)
         max_members_msg = "Max Members: " + (str(max_mentions) if max_mentions >= 0 else "No limit")
-        result_message = f"Poll Results (Time Remaining: {remaining_minutes}m {remaining_seconds}s, {max_members_msg}):\n"
+        result_message = f"Poll Results (Time Remaining: {remaining_minutes}m {remaining_seconds}s, {max_members_msg}, {option_msg}):\n"
         if poll['duration'] <= 0:
             result_message = f"Poll Results (Time Remaining: No time limit, {max_members_msg}):\n"
 
         for option, emoji in zip(options, stripped_emojis):
             user_mentions = poll_results[emoji]['users']
             result_message += f":{emoji}: {option.strip()}: {poll_results[emoji]['count']} votes ({user_mentions})\n"
-
         try:
             app.client.chat_update(
                 channel=channel_id,
@@ -204,7 +213,7 @@ def update_poll_results(channel_id, poll_id, polls):
             logger.info(f"Failed to update message: {e}")
 
 
-def create_poll(channel_id, question, options, emojis, duration, max_mentions, polls, poll_id=None):
+def create_poll(channel_id, question, options, emojis, duration, max_mentions, option_count, polls, poll_id=None):
     if poll_id is None:
         poll_id = len(polls)
 
@@ -242,7 +251,8 @@ def create_poll(channel_id, question, options, emojis, duration, max_mentions, p
             'results': poll_results,
             'max_mentions': max_mentions,
             'start_time': time.time(),
-            'duration': duration
+            'duration': duration,
+            'option_count': option_count,
         })
 
         polls[poll_id] = poll_data
@@ -294,14 +304,14 @@ def handle_createpoll(ack, body, say):
     if is_valid_rq(say, polls, channel_id, body['user_id']):
         try:
             parts = [part.strip() for part in text.split('|')]
-            if len(parts) != 5:
+            if len(parts) != 6:
                 app.client.chat_postEphemeral(channel=channel_id, user=body['user_id'], text="Invalid format. Please use the format: "
                                                                                              "question | option1,option2 | emoji1,"
                                                                                              "emoji2 | duration (in hours) | max_mentions "
-                                                                                             "(number).")
+                                                                                             "(number) | 1 option.")
                 return
 
-            question, options, emojis, duration, max_mentions = parts
+            question, options, emojis, duration, max_mentions, option_count = parts
             options = options.split(',')
             emojis = emojis.split(',')
 
@@ -322,10 +332,11 @@ def handle_createpoll(ack, body, say):
                                                                                              "of emojis.")
                 return
 
-            p = Process(target=create_poll, args=(channel_id, question, options, emojis, duration, max_mentions, polls))
+            p = Process(target=create_poll,
+                        args=(channel_id, question, options, emojis, duration, max_mentions, option_count, polls))
             p.start()
-
             poll_id = len(polls)
+
             poll_processes[poll_id] = p
             save_poll_processes_to_file(poll_processes)
             say(f"Poll created (ID: {poll_id}): {question}")
@@ -399,6 +410,7 @@ def reload_active_polls():
                 poll_data['emojis'],
                 poll_data['duration'],
                 poll_data['max_mentions'],
+                poll_data['option_count'],
                 polls,
                 poll_id
             ))
