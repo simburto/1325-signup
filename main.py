@@ -201,8 +201,15 @@ def update_poll_results(channel_id, poll_id, polls):
             result_message = f"Poll Results (Time Remaining: No time limit, {max_members_msg}):\n"
 
         for option, emoji in zip(options, stripped_emojis):
-            user_mentions = poll_results[emoji]['users']
-            result_message += f":{emoji}: {option.strip()}: {poll_results[emoji]['count']} votes ({user_mentions})\n"
+            try:
+                user_mentions = poll_results[emoji]['users']
+                count = poll_results[emoji]['count']
+            except KeyError:
+                user_mentions = ''
+            if user_mentions == '':
+                count = 0
+            result_message += f":{emoji}: {option.strip()}: {count} votes ({user_mentions})\n"
+
         try:
             app.client.chat_update(
                 channel=channel_id,
@@ -280,8 +287,14 @@ def cleanup_poll(polls, poll_id, channel_id):
     result_message = f"Final Poll Results:\n"
 
     for option, emoji in zip(options, stripped_emojis):
-        user_mentions = poll_results[emoji]['users']
-        result_message += f":{emoji}: {option.strip()}: {poll_results[emoji]['count']} votes ({user_mentions})\n"
+        try:
+            user_mentions = poll_results[emoji]['users']
+            count = poll_results[emoji]['count']
+        except KeyError:
+            user_mentions = ''
+        if user_mentions == '':
+            count = 0
+        result_message += f":{emoji}: {option.strip()}: {count} votes ({user_mentions})\n"
 
     try:
         app.client.chat_update(
