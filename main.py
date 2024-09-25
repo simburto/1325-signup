@@ -63,6 +63,12 @@ from collections import defaultdict
 from dotenv import load_dotenv
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
+from collections import deque
+import time
+
+# To keep track of update timestamps
+update_times = deque()
+MAX_UPDATES_PER_MINUTE = 50
 
 load_dotenv()
 
@@ -74,6 +80,7 @@ POLL_PERMS = "perms.json"
 logger = logging.getLogger(__name__)
 logging.basicConfig(filename='log.log', level=logging.INFO)
 logger.info('Started')
+
 
 def is_valid_rq(say, polls, rq_channel_id, rq_user_id, rq_poll_id=None):
     level = perms.get(rq_user_id, None)
@@ -186,6 +193,20 @@ def process_poll(polls, poll_id, channel_id):
 
 
 def update_poll_results(channel_id, poll_id, polls):
+    # Get the current time
+    current_time = time.time()
+
+    # Remove timestamps older than one minute
+    while update_times and update_times[0] < current_time - 60:
+        update_times.popleft()
+
+    # Check if the limit has been reached
+    if len(update_times) >= MAX_UPDATES_PER_MINUTE:
+        logger.info("Update limit reached. Skipping update.")
+        return
+
+    # If not reached, record the current timestamp
+    update_times.append(current_time)
     if polls.get(poll_id, None):
         poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
         if int(poll['option_count']) == 1:
@@ -200,11 +221,9 @@ def update_poll_results(channel_id, poll_id, polls):
         if poll['duration'] <= 0:
             result_message = f"Poll Results (Time Remaining: No time limit, {max_members_msg}):\n"
 
-        if polls[poll_id]['option_count'] == 1:
+        if int(polls[poll_id]['option_count']) == 1:
             data = poll_results
-
-            user_set = set()  # To keep track of unique users
-
+            user_set = set()
             for key, value in data.items():
                 if value['users']:
                     # Split users by comma and strip whitespace
@@ -217,6 +236,7 @@ def update_poll_results(channel_id, poll_id, polls):
 
             poll_results = data
 
+        print(poll_results)
         for option, emoji in zip(options, stripped_emojis):
             try:
                 user_mentions = poll_results[emoji]['users']
