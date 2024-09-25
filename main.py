@@ -469,6 +469,7 @@ def reload_active_polls():
 
 
 if __name__ == "__main__":
+    print(guh)
     with open(POLL_PERMS, 'r') as file:
         try:
             perms = json.load(file)
