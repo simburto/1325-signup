@@ -1,1737 +1,578 @@
 INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1726908512.203119', 'options': ['really', ' abandoned', ' me', ' not', ' cool'], 'emojis': ['rage', 'rage1', 'rage2', 'rage3', 'rage4'], 'results': {}, 'max_mentions': 1, 'start_time': 1726908512.6572435, 'duration': 1}}
 INFO:__main__:Started
 INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727036319.684789', 'options': ['answer', ' answer', ' answer', ' answer'], 'emojis': ['one', 'two', 'three', 'four'], 'results': {}, 'max_mentions': 1, 'start_time': 1727036321.0216568, 'duration': 1}}
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727036319.684789', 'options': ['answer', ' answer', ' answer', ' answer'], 'emojis': ['one', 'two', 'three', 'four'], 'results': {}, 'max_mentions': 1, 'start_time': 1727036321.0216568, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', ' option2'], 'timestamp': '1727060958.160279', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060957.3463025, 'duration': 1}}
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727036319.684789', 'options': ['answer', ' answer', ' answer', ' answer'], 'emojis': ['one', 'two', 'three', 'four'], 'results': {}, 'max_mentions': 1, 'start_time': 1727036321.0216568, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', ' option2'], 'timestamp': '1727060958.160279', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060957.3463025, 'duration': 1}, 2: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727060987.830479', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060987.0005813, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727036319.684789', 'options': ['answer', ' answer', ' answer', ' answer'], 'emojis': ['one', 'two', 'three', 'four'], 'results': {}, 'max_mentions': 1, 'start_time': 1727036321.0216568, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', ' option2'], 'timestamp': '1727060958.160279', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060957.3463025, 'duration': 1}, 2: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727060987.830479', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060987.0005813, 'duration': 1}, 3: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727061105.778369', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727061104.9491704, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727036319.684789', 'options': ['answer', ' answer', ' answer', ' answer'], 'emojis': ['one', 'two', 'three', 'four'], 'results': {}, 'max_mentions': 1, 'start_time': 1727036321.0216568, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', ' option2'], 'timestamp': '1727060958.160279', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060957.3463025, 'duration': 1}, 2: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727060987.830479', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060987.0005813, 'duration': 1}, 3: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727061105.778369', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727061104.9491704, 'duration': 1}, 4: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727061140.882459', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727061140.047268, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Poll created: {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727036319.684789', 'options': ['answer', ' answer', ' answer', ' answer'], 'emojis': ['one', 'two', 'three', 'four'], 'results': {}, 'max_mentions': 1, 'start_time': 1727036321.0216568, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', ' option2'], 'timestamp': '1727060958.160279', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060957.3463025, 'duration': 1}, 2: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727060987.830479', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060987.0005813, 'duration': 1}, 3: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727061105.778369', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727061104.9491704, 'duration': 1}, 4: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727061140.882459', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727061140.047268, 'duration': 1}, 5: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727061247.857619', 'question': 'question', 'options': ['option1', 'option2'], 'results': {'option1': 0, 'option2': 0}, 'start_time': 1727061247.0242996, 'duration': 1}}
-WARNING:slack_bolt.App:Unhandled request ({'type': 'block_actions', 'block_id': 'GonZY', 'action_id': 'vote_5_option1'})
----
-[Suggestion] You can handle this type of event with the following listener function:
-
-@app.action("vote_5_option1")
-def handle_some_action(ack, body, logger):
-    ack()
-    logger.info(body)
-
-WARNING:slack_bolt.App:Unhandled request ({'type': 'block_actions', 'block_id': '6ovqA', 'action_id': 'vote_5_option2'})
----
-[Suggestion] You can handle this type of event with the following listener function:
-
-@app.action("vote_5_option2")
-def handle_some_action(ack, body, logger):
-    ack()
-    logger.info(body)
-
-ERROR:slack_bolt.App:Failed to run listener function (error: 'max_mentions')
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\etwtra.py", line 233, in handle_endpoll
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\etwtra.py", line 109, in update_poll_results
-    max_members_msg = "Max Members: " + (str(poll['max_mentions']) if poll['max_mentions'] >= 0 else "No limit")
-                                                                      ~~~~^^^^^^^^^^^^^^^^
-KeyError: 'max_mentions'
-INFO:__main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: 'max_mentions')
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\etwtra.py", line 233, in handle_endpoll
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\etwtra.py", line 109, in update_poll_results
-    max_members_msg = "Max Members: " + (str(poll['max_mentions']) if poll['max_mentions'] >= 0 else "No limit")
-                                                                      ~~~~^^^^^^^^^^^^^^^^
-KeyError: 'max_mentions'
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Poll created: {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727036319.684789', 'options': ['answer', ' answer', ' answer', ' answer'], 'emojis': ['one', 'two', 'three', 'four'], 'results': {}, 'max_mentions': 1, 'start_time': 1727036321.0216568, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', ' option2'], 'timestamp': '1727060958.160279', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060957.3463025, 'duration': 1}, 2: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727060987.830479', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060987.0005813, 'duration': 1}, 3: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727061105.778369', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727061104.9491704, 'duration': 1}, 4: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727061140.882459', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727061140.047268, 'duration': 1}, 5: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727061247.857619', 'question': 'question', 'options': ['option1', 'option2'], 'results': {'option1': 0, 'option2': 0}, 'start_time': 1727061247.0242996, 'duration': 1}, 6: {'active': True, 'channel_id': 'C07NBTGJ97A', 'max_mentions': 1, 'timestamp': '1727061381.168729', 'question': 'question', 'options': ['option1', 'option2'], 'results': {'option1': 0, 'option2': 0}, 'start_time': 1727061380.3319757, 'duration': 1}}
-WARNING:slack_bolt.App:Unhandled request ({'type': 'block_actions', 'block_id': 'ps22E', 'action_id': 'vote_6_option1'})
----
-[Suggestion] You can handle this type of event with the following listener function:
-
-@app.action("vote_6_option1")
-def handle_some_action(ack, body, logger):
-    ack()
-    logger.info(body)
-
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Poll created: {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727036319.684789', 'options': ['answer', ' answer', ' answer', ' answer'], 'emojis': ['one', 'two', 'three', 'four'], 'results': {}, 'max_mentions': 1, 'start_time': 1727036321.0216568, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', ' option2'], 'timestamp': '1727060958.160279', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060957.3463025, 'duration': 1}, 2: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727060987.830479', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060987.0005813, 'duration': 1}, 3: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727061105.778369', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727061104.9491704, 'duration': 1}, 4: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727061140.882459', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727061140.047268, 'duration': 1}, 5: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727061247.857619', 'question': 'question', 'options': ['option1', 'option2'], 'results': {'option1': 0, 'option2': 0}, 'start_time': 1727061247.0242996, 'duration': 1}, 6: {'active': True, 'channel_id': 'C07NBTGJ97A', 'max_mentions': 1, 'timestamp': '1727061381.168729', 'question': 'question', 'options': ['option1', 'option2'], 'results': {'option1': 0, 'option2': 0}, 'start_time': 1727061380.3319757, 'duration': 1}, 7: {'active': True, 'channel_id': 'C07NBTGJ97A', 'max_mentions': 1, 'results': {'option_0': {'votes': 0, 'users': []}, 'option_1': {'votes': 0, 'users': []}}, 'timestamp': '1727061485.324169', 'question': 'question', 'options': ['option1', 'option2'], 'start_time': 1727061484.4818914, 'duration': 1}}
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Created poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727036319.684789', 'options': ['answer', ' answer', ' answer', ' answer'], 'emojis': ['one', 'two', 'three', 'four'], 'results': {}, 'max_mentions': 1, 'start_time': 1727036321.0216568, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', ' option2'], 'timestamp': '1727060958.160279', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060957.3463025, 'duration': 1}, 2: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727060987.830479', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727060987.0005813, 'duration': 1}, 3: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727061105.778369', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727061104.9491704, 'duration': 1}, 4: {'active': True, 'channel_id': 'C07NBTGJ97A', 'options': ['option1', 'option2'], 'timestamp': '1727061140.882459', 'results': {'option_0': {'count': 0, 'users': []}, 'option_1': {'count': 0, 'users': []}}, 'max_mentions': 1, 'start_time': 1727061140.047268, 'duration': 1}, 5: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727061247.857619', 'question': 'question', 'options': ['option1', 'option2'], 'results': {'option1': 0, 'option2': 0}, 'start_time': 1727061247.0242996, 'duration': 1}, 6: {'active': True, 'channel_id': 'C07NBTGJ97A', 'max_mentions': 1, 'timestamp': '1727061381.168729', 'question': 'question', 'options': ['option1', 'option2'], 'results': {'option1': 0, 'option2': 0}, 'start_time': 1727061380.3319757, 'duration': 1}, 7: {'active': True, 'channel_id': 'C07NBTGJ97A', 'max_mentions': 1, 'results': {'option_0': {'votes': 0, 'users': []}, 'option_1': {'votes': 0, 'users': []}}, 'timestamp': '1727061485.324169', 'question': 'question', 'options': ['option1', 'option2'], 'start_time': 1727061484.4818914, 'duration': 1}, 8: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727062198.520939', 'options': ['option1', 'option2'], 'results': {}, 'start_time': 1727062197.6622605, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727063204.705919', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727063204.456625, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727063204.705919', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727063204.456625, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727063397.346219', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727063397.0805175, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'user_votes': {}, 'timestamp': '1727124950.708469', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727124951.4649193, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Removed multiple vote from user U060517Q35Z for emoji two
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'user_votes': {}, 'timestamp': '1727124950.708469', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 0, 'users': ''}, 'two': {'count': 0, 'users': 'No votes'}, 'three': {'count': 0, 'users': ''}}, 'max_mentions': 1, 'start_time': 1727124951.4649193, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125167.510699', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727125168.3586528, 'duration': 1}}
-INFO:__main__:Removed multiple vote from user U060517Q35Z for emoji two
-INFO:__main__:Removed multiple vote from user U060517Q35Z for emoji three
-INFO:__mp_main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__mp_main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__mp_main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__mp_main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__mp_main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__mp_main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__mp_main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__mp_main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__mp_main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__mp_main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__mp_main__:Failed to remove reaction: The request to the Slack API failed. (url: https://slack.com/api/reactions.remove)
-The server responded with: {'ok': False, 'error': 'no_reaction'}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'user_votes': {}, 'timestamp': '1727124950.708469', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 0, 'users': ''}, 'two': {'count': 0, 'users': 'No votes'}, 'three': {'count': 0, 'users': ''}}, 'max_mentions': 1, 'start_time': 1727124951.4649193, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125167.510699', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 2, 'users': '<@U060517Q35Z><@U060517Q35Z>, '}, 'two': {'count': 0, 'users': '<@U060517Q35Z>'}, 'three': {'count': 0, 'users': '<@U060517Q35Z>'}}, 'max_mentions': 1, 'start_time': 1727125168.3586528, 'duration': 1, 'user_votes': {'U060517Q35Z': 'one'}}, 2: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125278.894699', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727125279.6384065, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'user_votes': {}, 'timestamp': '1727124950.708469', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 0, 'users': ''}, 'two': {'count': 0, 'users': 'No votes'}, 'three': {'count': 0, 'users': ''}}, 'max_mentions': 1, 'start_time': 1727124951.4649193, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125167.510699', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 2, 'users': '<@U060517Q35Z><@U060517Q35Z>, '}, 'two': {'count': 0, 'users': '<@U060517Q35Z>'}, 'three': {'count': 0, 'users': '<@U060517Q35Z>'}}, 'max_mentions': 1, 'start_time': 1727125168.3586528, 'duration': 1, 'user_votes': {'U060517Q35Z': 'one'}}, 2: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125278.894699', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 2, 'users': '<@U060517Q35Z><@U060517Q35Z>, '}, 'two': {'count': 0, 'users': ''}, 'three': {'count': 0, 'users': ''}}, 'max_mentions': 1, 'start_time': 1727125279.6384065, 'duration': 1}, 3: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125421.604829', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727125422.3443244, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'user_votes': {}, 'timestamp': '1727124950.708469', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 0, 'users': ''}, 'two': {'count': 0, 'users': 'No votes'}, 'three': {'count': 0, 'users': ''}}, 'max_mentions': 1, 'start_time': 1727124951.4649193, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125167.510699', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 2, 'users': '<@U060517Q35Z><@U060517Q35Z>, '}, 'two': {'count': 0, 'users': '<@U060517Q35Z>'}, 'three': {'count': 0, 'users': '<@U060517Q35Z>'}}, 'max_mentions': 1, 'start_time': 1727125168.3586528, 'duration': 1, 'user_votes': {'U060517Q35Z': 'one'}}, 2: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125278.894699', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 2, 'users': '<@U060517Q35Z><@U060517Q35Z>, '}, 'two': {'count': 0, 'users': ''}, 'three': {'count': 0, 'users': ''}}, 'max_mentions': 1, 'start_time': 1727125279.6384065, 'duration': 1}, 3: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125421.604829', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 2, 'users': '<@U060517Q35Z><@U060517Q35Z>, '}, 'two': {'count': 1, 'users': '<@U060517Q35Z>'}, 'three': {'count': 0, 'users': ''}}, 'max_mentions': 1, 'start_time': 1727125422.3443244, 'duration': 1}, 4: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125732.081679', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727125732.8449621, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'user_votes': {}, 'timestamp': '1727124950.708469', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 0, 'users': ''}, 'two': {'count': 0, 'users': 'No votes'}, 'three': {'count': 0, 'users': ''}}, 'max_mentions': 1, 'start_time': 1727124951.4649193, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125167.510699', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 2, 'users': '<@U060517Q35Z><@U060517Q35Z>, '}, 'two': {'count': 0, 'users': '<@U060517Q35Z>'}, 'three': {'count': 0, 'users': '<@U060517Q35Z>'}}, 'max_mentions': 1, 'start_time': 1727125168.3586528, 'duration': 1, 'user_votes': {'U060517Q35Z': 'one'}}, 2: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125278.894699', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 2, 'users': '<@U060517Q35Z><@U060517Q35Z>, '}, 'two': {'count': 0, 'users': ''}, 'three': {'count': 0, 'users': ''}}, 'max_mentions': 1, 'start_time': 1727125279.6384065, 'duration': 1}, 3: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125421.604829', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 2, 'users': '<@U060517Q35Z><@U060517Q35Z>, '}, 'two': {'count': 1, 'users': '<@U060517Q35Z>'}, 'three': {'count': 0, 'users': ''}}, 'max_mentions': 1, 'start_time': 1727125422.3443244, 'duration': 1}, 4: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125732.081679', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 0, 'users': ''}, 'two': {'count': 0, 'users': ''}, 'three': {'count': 0, 'users': ''}}, 'max_mentions': 1, 'start_time': 1727125732.8449621, 'duration': 1}, 5: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727125959.227069', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727125959.9988928, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727126063.141689', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727126063.86683, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: 'int' object is not subscriptable)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 418, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 217, in update_poll_results
-    if user_mention not in poll_results[emoji]['count']['users']:
-                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-TypeError: 'int' object is not subscriptable
-ERROR:slack_bolt.App:Failed to run listener function (error: 'int' object is not subscriptable)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 431, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 217, in update_poll_results
-    if user_mention not in poll_results[emoji]['count']['users']:
-                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-TypeError: 'int' object is not subscriptable
-ERROR:slack_bolt.App:Failed to run listener function (error: 'int' object is not subscriptable)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 418, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 217, in update_poll_results
-    if user_mention not in poll_results[emoji]['count']['users']:
-                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
-TypeError: 'int' object is not subscriptable
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727127239.050789', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727127239.797685, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions_list' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 391, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 184, in update_poll_results
-    poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 171, in process_poll
-    "users": user_mentions_list or "No votes"
-             ^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions_list' where it is not associated with a value
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727127239.050789', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {'one': {'count': 0, 'users': ''}, 'two': {'count': 1, 'users': '<@U060517Q35Z>'}, 'three': {'count': 1, 'users': '<@U04QBUD5B>'}}, 'max_mentions': 1, 'start_time': 1727127239.797685, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727129372.285639', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727129372.9735506, 'duration': 1}}
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions_list' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 391, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 184, in update_poll_results
-    poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 171, in process_poll
-    "users": user_mentions_list or "No votes"
-             ^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions_list' where it is not associated with a value
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions_list' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 378, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 184, in update_poll_results
-    poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 171, in process_poll
-    "users": user_mentions_list or "No votes"
-             ^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions_list' where it is not associated with a value
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions_list' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 391, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 184, in update_poll_results
-    poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 171, in process_poll
-    "users": user_mentions_list or "No votes"
-             ^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions_list' where it is not associated with a value
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727129783.922379', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727129784.568472, 'duration': 1}}
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions_list' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 391, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 184, in update_poll_results
-    poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 171, in process_poll
-    "users": user_mentions_list or "No votes"
-             ^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions_list' where it is not associated with a value
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions_list' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 391, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 184, in update_poll_results
-    poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 171, in process_poll
-    "users": user_mentions_list or "No votes"
-             ^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions_list' where it is not associated with a value
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: 'aewrnoi' is not in list)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 392, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 205, in update_poll_results
-    result_message += f":{stripped_emojis[options.index(option)]}: {option}: {result['count']} votes ({user_mentions})\n"
-                                          ^^^^^^^^^^^^^^^^^^^^^
-ValueError: 'aewrnoi' is not in list
-ERROR:slack_bolt.App:Failed to run listener function (error: 'aewrnoi' is not in list)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 392, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 205, in update_poll_results
-    result_message += f":{stripped_emojis[options.index(option)]}: {option}: {result['count']} votes ({user_mentions})\n"
-                                          ^^^^^^^^^^^^^^^^^^^^^
-ValueError: 'aewrnoi' is not in list
-ERROR:slack_bolt.App:Failed to run listener function (error: 'aewrnoi' is not in list)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 405, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 205, in update_poll_results
-    result_message += f":{stripped_emojis[options.index(option)]}: {option}: {result['count']} votes ({user_mentions})\n"
-                                          ^^^^^^^^^^^^^^^^^^^^^
-ValueError: 'aewrnoi' is not in list
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions_list' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 392, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 183, in update_poll_results
-    poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 171, in process_poll
-    "users": user_mentions_list or "No votes"
-             ^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions_list' where it is not associated with a value
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions_list' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 392, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 183, in update_poll_results
-    poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 171, in process_poll
-    "users": user_mentions_list or "No votes"
-             ^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions_list' where it is not associated with a value
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions_list' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 405, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 183, in update_poll_results
-    poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 171, in process_poll
-    "users": user_mentions_list or "No votes"
-             ^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions_list' where it is not associated with a value
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions_list' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 405, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 183, in update_poll_results
-    poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 171, in process_poll
-    "users": user_mentions_list or "No votes"
-             ^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions_list' where it is not associated with a value
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727129783.922379', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727129784.568472, 'duration': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727129886.289709', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727129886.8764143, 'duration': 1}}
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions_list' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 392, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 183, in update_poll_results
-    poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 171, in process_poll
-    "users": user_mentions_list or "No votes"
-             ^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions_list' where it is not associated with a value
-ERROR:slack_bolt.App:Failed to run listener function (error: 'aewrnoi' is not in list)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 405, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 205, in update_poll_results
-    result_message += f":{stripped_emojis[options.index(option)]}: {option}: {result['count']} votes ({user_mentions})\n"
-                                          ^^^^^^^^^^^^^^^^^^^^^
-ValueError: 'aewrnoi' is not in list
-ERROR:slack_bolt.App:Failed to run listener function (error: 'aewrnoi' is not in list)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 392, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 205, in update_poll_results
-    result_message += f":{stripped_emojis[options.index(option)]}: {option}: {result['count']} votes ({user_mentions})\n"
-                                          ^^^^^^^^^^^^^^^^^^^^^
-ValueError: 'aewrnoi' is not in list
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727130006.742749', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727130007.3975103, 'duration': 1}}
-ERROR:slack_bolt.App:Failed to run listener function (error: 'aewrnoi' is not in list)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 392, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 205, in update_poll_results
-    result_message += f":{stripped_emojis[options.index(option)]}: {option}: {result['count']} votes ({user_mentions})\n"
-                                          ^^^^^^^^^^^^^^^^^^^^^
-ValueError: 'aewrnoi' is not in list
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: str.join() takes exactly one argument (0 given))
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 405, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 217, in update_poll_results
-    result_message += f":{[emoji for emoji, opt in zip(stripped_emojis, options) if opt.strip() == option][0]}: {option}: {votes_count} votes ({user_mentions_str.join()})\n"
-                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: str.join() takes exactly one argument (0 given)
-ERROR:slack_bolt.App:Failed to run listener function (error: str.join() takes exactly one argument (0 given))
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 418, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 217, in update_poll_results
-    result_message += f":{[emoji for emoji, opt in zip(stripped_emojis, options) if opt.strip() == option][0]}: {option}: {votes_count} votes ({user_mentions_str.join()})\n"
-                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: str.join() takes exactly one argument (0 given)
-ERROR:slack_bolt.App:Failed to run listener function (error: str.join() takes exactly one argument (0 given))
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 418, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 217, in update_poll_results
-    result_message += f":{[emoji for emoji, opt in zip(stripped_emojis, options) if opt.strip() == option][0]}: {option}: {votes_count} votes ({user_mentions_str.join()})\n"
-                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: str.join() takes exactly one argument (0 given)
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727131900.990269', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727131901.6336493, 'duration': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
 INFO:__mp_main__:Started
 INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727131986.441179', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727131987.9617836, 'duration': 1}}
-ERROR:slack_bolt.App:Failed to run listener function (error: 'aewrnoi' is not in list)
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 389, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 209, in update_poll_results
-    result_message += f":{stripped_emojis[options.index(option)]}: {option}: {result['count']} votes ({user_mentions})\n"
-                                          ^^^^^^^^^^^^^^^^^^^^^
-ValueError: 'aewrnoi' is not in list
-ERROR:slack_bolt.App:Failed to run listener function (error: 'aewrnoi' is not in list)
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 389, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 209, in update_poll_results
-    result_message += f":{stripped_emojis[options.index(option)]}: {option}: {result['count']} votes ({user_mentions})\n"
-                                          ^^^^^^^^^^^^^^^^^^^^^
-ValueError: 'aewrnoi' is not in list
-ERROR:slack_bolt.App:Failed to run listener function (error: 'aewrnoi' is not in list)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 402, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 209, in update_poll_results
-    result_message += f":{stripped_emojis[options.index(option)]}: {option}: {result['count']} votes ({user_mentions})\n"
-                                          ^^^^^^^^^^^^^^^^^^^^^
-ValueError: 'aewrnoi' is not in list
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 381, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 200, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 381, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 200, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 381, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 200, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 381, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 200, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 381, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 200, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 379, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 198, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 379, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 198, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 379, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 198, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 392, in handle_reaction_removed
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 198, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 379, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 198, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 392, in handle_reaction_removed
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 198, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 379, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 198, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 379, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\erawgga.py", line 198, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727133451.293529', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': '1', 'start_time': 1727133451.891265, 'duration': 1, 'option_count': 1}}
-ERROR:slack_bolt.App:Failed to run listener function (error: '>=' not supported between instances of 'str' and 'int')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 383, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 190, in update_poll_results
-    poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
-                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 163, in process_poll
-    limit = max_mentions + 1 if max_mentions >= 0 else len(reaction_data['users'])
-                                ^^^^^^^^^^^^^^^^^
-TypeError: '>=' not supported between instances of 'str' and 'int'
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727133511.950709', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': '1', 'start_time': 1727133512.5574982, 'duration': 1, 'option_count': 1}}
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 383, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 383, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727133555.709249', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': '0', 'start_time': 1727133556.293041, 'duration': 1, 'option_count': 1}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727133757.614859', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727133758.5028677, 'duration': 1, 'option_count': '1'}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727133984.575229', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727133985.1114006, 'duration': 1, 'option_count': '1'}}
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 383, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 200, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 383, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 200, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 383, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 200, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727133984.575229', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727133985.1114006, 'duration': 1, 'option_count': '1'}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727134141.076019', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727134141.6857193, 'duration': 1, 'option_count': '0'}}
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 383, in handle_reaction_added
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 200, in update_poll_results
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 383, in handle_reaction_added
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 200, in update_poll_results
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 383, in handle_reaction_added
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 200, in update_poll_results
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 396, in handle_reaction_removed
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 200, in update_poll_results
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 383, in handle_reaction_added
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 200, in update_poll_results
-KeyError: 'three'
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 384, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 384, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 384, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 384, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 384, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 384, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 397, in handle_reaction_removed
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 384, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 384, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 384, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 384, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 201, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 387, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-INFO:__main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727134549.876479', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': -1, 'start_time': 1727134550.4066665, 'duration': 1, 'option_count': '1'}}
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 387, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727134549.876479', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': -1, 'start_time': 1727134550.4066665, 'duration': 1, 'option_count': '1'}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727134569.664149', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': -1, 'start_time': 1727134570.2572584, 'duration': 1, 'option_count': '0'}}
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 400, in handle_reaction_removed
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 387, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'three')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 387, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'three'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 387, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 387, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 387, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 424, in handle_reaction_added
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
+ERROR:slack_bolt.App:Failed to run listener function (error: 'in <string>' requires string as left operand, not list)
 Traceback (most recent call last):
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
     listener.run_ack_function(request=request, response=response)
   File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
     return self.ack_function(
            ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 387, in handle_reaction_added
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 437, in handle_reaction_removed
     update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 234, in update_poll_results
+    if user_mentions in result_message:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not list
 INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
-INFO:__mp_main__:Started
 INFO:__main__:Started
-INFO:__mp_main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
 INFO:__main__:Started
-INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
+INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
+INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
 INFO:__main__:Started
-INFO:__mp_main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
 INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
-INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 400, in handle_reaction_removed
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 206, in update_poll_results
-    result_message += f":{emoji}: {option.strip()}: {poll_results[emoji]['count']} votes ({user_mentions})\n"
-                                                                                           ^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions' where it is not associated with a value
-ERROR:slack_bolt.App:Failed to run listener function (error: cannot access local variable 'user_mentions' where it is not associated with a value)
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 387, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 206, in update_poll_results
-    result_message += f":{emoji}: {option.strip()}: {poll_results[emoji]['count']} votes ({user_mentions})\n"
-                                                                                           ^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'user_mentions' where it is not associated with a value
 INFO:__main__:Started
-INFO:__mp_main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
 INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
-INFO:__mp_main__:Started
 INFO:__main__:Started
+INFO:__mp_main__:Started
 INFO:__mp_main__:Started
-ERROR:slack_bolt.App:Failed to retrieve WSS URL: The request to the Slack API failed. (url: https://slack.com/api/apps.connections.open)
-The server responded with: {'ok': False, 'error': 'invalid_auth'}
 INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
-INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727217145.154369', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727217145.8487756, 'duration': 1, 'option_count': '1'}}
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 386, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 386, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 386, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
-ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
-Traceback (most recent call last):
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
-    listener.run_ack_function(request=request, response=response)
-  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
-    return self.ack_function(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 386, in handle_reaction_added
-    update_poll_results(channel_id, poll_id, polls)
-  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
-    user_mentions = poll_results[emoji]['users']
-                    ~~~~~~~~~~~~^^^^^^^
-KeyError: 'two'
 INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
@@ -1740,7 +581,6 @@ INFO:__mp_main__:Started
 INFO:__mp_main__:Started
 INFO:__main__:Started
 INFO:__mp_main__:Started
-INFO:__mp_main__:Started
 INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
@@ -1759,15 +599,285 @@ INFO:__mp_main__:Started
 INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
 INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
 INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
 INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727244760.977959', 'options': ['Monday 6-9pm', ' Saturday 10am-1pm', ' Saturday 2pm-5pm'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 20, 'start_time': 1727244761.7216272, 'duration': 72, 'option_count': '1'}}
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727244808.034059', 'options': ['Monday 6-9pm', ' Saturday 10am-1pm', ' Saturday 2pm-5pm'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 20, 'start_time': 1727244808.7994852, 'duration': 72, 'option_count': '0'}}
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
 INFO:__main__:Started
+INFO:__mp_main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727244808.034059', 'options': ['Monday 6-9pm', ' Saturday 10am-1pm', ' Saturday 2pm-5pm'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 20, 'start_time': 1727244808.7994852, 'duration': 72, 'option_count': '0'}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727245086.762509', 'options': ['Monday 6-9pm', ' Saturday 10am-1pm', ' Saturday 2pm-5pm'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 20, 'start_time': 1727245087.4819021, 'duration': 72, 'option_count': '1'}}
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Update limit reached. Skipping update.

@@ -59,7 +59,7 @@ import json
 import os
 import time
 from multiprocessing import Process, Manager
-
+from collections import defaultdict
 from dotenv import load_dotenv
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
@@ -200,6 +200,23 @@ def update_poll_results(channel_id, poll_id, polls):
         if poll['duration'] <= 0:
             result_message = f"Poll Results (Time Remaining: No time limit, {max_members_msg}):\n"
 
+        if polls[poll_id]['option_count'] == 1:
+            data = poll_results
+
+            user_set = set()  # To keep track of unique users
+
+            for key, value in data.items():
+                if value['users']:
+                    # Split users by comma and strip whitespace
+                    users = [user.strip() for user in value['users'].split(',')]
+                    # Add new users to the set
+                    unique_users = [user for user in users if user not in user_set]
+                    # Update the set with the new unique users
+                    user_set.update(unique_users)
+                    value['users'] = ', '.join(unique_users)
+
+            poll_results = data
+
         for option, emoji in zip(options, stripped_emojis):
             try:
                 user_mentions = poll_results[emoji]['users']
@@ -208,6 +225,7 @@ def update_poll_results(channel_id, poll_id, polls):
                 user_mentions = ''
             if user_mentions == '':
                 count = 0
+            user_mentions = str(user_mentions).replace("]", "").replace("[", "").replace("'", "")
             result_message += f":{emoji}: {option.strip()}: {count} votes ({user_mentions})\n"
 
         try:
@@ -285,15 +303,32 @@ def cleanup_poll(polls, poll_id, channel_id):
     poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
 
     result_message = f"Final Poll Results:\n"
+    if polls[poll_id]['option_count'] == 1:
+        data = poll_results
+
+        user_set = set()  # To keep track of unique users
+
+        for key, value in data.items():
+            if value['users']:
+                # Split users by comma and strip whitespace
+                users = [user.strip() for user in value['users'].split(',')]
+                # Add new users to the set
+                unique_users = [user for user in users if user not in user_set]
+                # Update the set with the new unique users
+                user_set.update(unique_users)
+                value['users'] = ', '.join(unique_users)
+
+        poll_results = data
 
     for option, emoji in zip(options, stripped_emojis):
         try:
-            user_mentions = poll_results[emoji]['users']
+            user_mentions = poll_results[emoji]['users'].split(",")
             count = poll_results[emoji]['count']
         except KeyError:
             user_mentions = ''
         if user_mentions == '':
             count = 0
+        user_mentions = str(user_mentions).replace("]", "").replace("[", "").replace("'", "")
         result_message += f":{emoji}: {option.strip()}: {count} votes ({user_mentions})\n"
 
     try:
