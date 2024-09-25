@@ -1672,3 +1672,102 @@ INFO:__main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
 INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+ERROR:slack_bolt.App:Failed to retrieve WSS URL: The request to the Slack API failed. (url: https://slack.com/api/apps.connections.open)
+The server responded with: {'ok': False, 'error': 'invalid_auth'}
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1727217145.154369', 'options': ['anwer', ' aewrnoi', ' eawuitiaure'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1727217145.8487756, 'duration': 1, 'option_count': '1'}}
+ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 386, in handle_reaction_added
+    update_poll_results(channel_id, poll_id, polls)
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
+    user_mentions = poll_results[emoji]['users']
+                    ~~~~~~~~~~~~^^^^^^^
+KeyError: 'two'
+ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 386, in handle_reaction_added
+    update_poll_results(channel_id, poll_id, polls)
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
+    user_mentions = poll_results[emoji]['users']
+                    ~~~~~~~~~~~~^^^^^^^
+KeyError: 'two'
+ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 386, in handle_reaction_added
+    update_poll_results(channel_id, poll_id, polls)
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
+    user_mentions = poll_results[emoji]['users']
+                    ~~~~~~~~~~~~^^^^^^^
+KeyError: 'two'
+ERROR:slack_bolt.App:Failed to run listener function (error: 'two')
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 386, in handle_reaction_added
+    update_poll_results(channel_id, poll_id, polls)
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 204, in update_poll_results
+    user_mentions = poll_results[emoji]['users']
+                    ~~~~~~~~~~~~^^^^^^^
+KeyError: 'two'
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
