@@ -323,7 +323,7 @@ def cleanup_poll(polls, poll_id, channel_id):
     poll, max_mentions, options, stripped_emojis, poll_results = process_poll(polls, poll_id, channel_id)
 
     result_message = f"Final Poll Results:\n"
-    if polls[poll_id]['option_count'] == 1:
+    if int(polls[poll_id]['option_count']) == 1:
         data = poll_results
 
         user_set = set()  # To keep track of unique users
