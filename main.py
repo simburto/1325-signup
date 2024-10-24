@@ -266,10 +266,19 @@ def create_poll(channel_id, question, options, emojis, duration, max_mentions, o
     poll_results = poll_data.get('results', {})
 
     if 'timestamp' not in poll_data:
+        # Create the message with question and poll ID
+        poll_info_message = f"Poll ID: {poll_id}\nQuestion: {question}\n"
         poll_message = f"*{question}*\n"
         for option, emoji in zip(options, emojis):
             poll_message += f":{emoji.strip()}:{option.strip()}\n"
 
+        # Send the poll info message first
+        app.client.chat_postMessage(
+            channel=channel_id,
+            text=poll_info_message
+        )
+
+        # Then send the poll message
         result = app.client.chat_postMessage(
             channel=channel_id,
             text=poll_message
@@ -364,54 +373,107 @@ def cleanup_poll(polls, poll_id, channel_id):
     save_polls_to_file(polls)
 
 
-@app.command("/createpoll")
-def handle_createpoll(ack, body, say):
+@app.shortcut("create_poll")
+def open_create_poll_modal(ack, body, client):
     ack()
-    text = body['text']
-    channel_id = body['channel_id']
-    if is_valid_rq(say, polls, channel_id, body['user_id']):
-        try:
-            parts = [part.strip() for part in text.split('|')]
-            if len(parts) != 6:
-                app.client.chat_postEphemeral(channel=channel_id, user=body['user_id'], text="Invalid format. Please use the format: "
-                                                                                             "question | option1,option2 | emoji1,"
-                                                                                             "emoji2 | duration (in hours) | max_mentions "
-                                                                                             "(number) | 1 option.")
-                return
+    client.views_open(
+        trigger_id=body["trigger_id"],
+        view={
+            "type": "modal",
+            "callback_id": "poll_creation_view",
+            "title": {"type": "plain_text", "text": "Create a Poll"},
+            "blocks": [
+                {
+                    "type": "input",
+                    "block_id": "channel_select_block",
+                    "element": {
+                        "type": "conversations_select",
+                        "action_id": "selected_channel",
+                        "placeholder": {"type": "plain_text", "text": "Select a channel"},
+                        "filter": {"include": ["public", "private"]}
+                    },
+                    "label": {"type": "plain_text", "text": "Channel"}
+                },
+                {
+                    "type": "input",
+                    "block_id": "question_block",
+                    "label": {"type": "plain_text", "text": "Poll Question"},
+                    "element": {"type": "plain_text_input", "action_id": "question"},
+                },
+                {
+                    "type": "input",
+                    "block_id": "options_block",
+                    "label": {"type": "plain_text", "text": "Poll Options (comma-separated)"},
+                    "element": {"type": "plain_text_input", "action_id": "options"},
+                },
+                {
+                    "type": "input",
+                    "block_id": "emojis_block",
+                    "label": {"type": "plain_text", "text": "Emojis (comma-separated)"},
+                    "element": {"type": "plain_text_input", "action_id": "emojis"},
+                },
+                {
+                    "type": "input",
+                    "block_id": "duration_block",
+                    "label": {"type": "plain_text", "text": "Poll Duration (in hours)"},
+                    "element": {"type": "plain_text_input", "action_id": "duration"},
+                },
+                {
+                    "type": "input",
+                    "block_id": "max_mentions_block",
+                    "label": {"type": "plain_text", "text": "Max Mentions (number)"},
+                    "element": {"type": "plain_text_input", "action_id": "max_mentions"},
+                },
+                {
+                    "type": "input",
+                    "block_id": "option_count_block",
+                    "label": {"type": "plain_text", "text": "Option Count (1 or more)"},
+                    "element": {"type": "plain_text_input", "action_id": "option_count"},
+                },
+            ],
+            "submit": {"type": "plain_text", "text": "Create"},
+        }
+    )
 
-            question, options, emojis, duration, max_mentions, option_count = parts
-            options = options.split(',')
-            emojis = emojis.split(',')
 
-            try:
-                duration = int(duration)
-            except ValueError:
-                app.client.chat_postEphemeral(channel=channel_id, user=body['user_id'], text="Duration must be a valid number of hours.")
-                return
+@app.view("poll_creation_view")
+def handle_poll_submission(ack, body, view, logger):
+    ack()
 
-            try:
-                max_mentions = int(max_mentions)
-            except ValueError:
-                app.client.chat_postEphemeral(channel=channel_id, user=body['user_id'], text="Max mentions must be a valid number.")
-                return
+    try:
+        selected_channel = view["state"]["values"]["channel_select_block"]["selected_channel"]["selected_conversation"]
+    except KeyError:
+        logger.error("Channel ID not found.")
+        return
 
-            if len(options) != len(emojis):
-                app.client.chat_postEphemeral(channel=channel_id, user=body['user_id'], text="The number of options must match the number "
-                                                                                             "of emojis.")
-                return
+    question = view["state"]["values"]["question_block"]["question"]["value"]
+    options = view["state"]["values"]["options_block"]["options"]["value"]
+    emojis = view["state"]["values"]["emojis_block"]["emojis"]["value"]
+    duration = view["state"]["values"]["duration_block"]["duration"]["value"]
+    max_mentions = view["state"]["values"]["max_mentions_block"]["max_mentions"]["value"]
+    option_count = view["state"]["values"]["option_count_block"]["option_count"]["value"]
 
-            p = Process(target=create_poll,
-                        args=(channel_id, question, options, emojis, duration, max_mentions, option_count, polls))
-            p.start()
-            poll_id = len(polls)
+    try:
+        options = options.split(',')
+        emojis = emojis.split(',')
+        duration = int(duration)
+        max_mentions = int(max_mentions)
+        option_count = int(option_count)
 
-            poll_processes[poll_id] = p
-            save_poll_processes_to_file(poll_processes)
-            say(f"Poll created (ID: {poll_id}): {question}")
+        if len(options) != len(emojis):
+            logger.error("Options and emojis count mismatch.")
+            return
 
-        except Exception as e:
-            app.client.chat_postEphemeral(channel=channel_id, user=body['user_id'], text=f":wompwomp2::wompwomp2: Failed to create poll: "
-                                                                                         f"{e} :wompwomp2::wompwomp2:")
+        p = Process(target=create_poll, args=(selected_channel, question, options, emojis, duration, max_mentions, option_count, polls))
+        p.start()
+        poll_id = len(polls)
+
+        poll_processes[poll_id] = p
+        save_poll_processes_to_file(poll_processes)
+        logger.info(f"Poll created: {question}")
+
+    except Exception as e:
+        logger.error(f"Error creating poll: {e}")
 
 
 @app.command("/endpoll")
@@ -440,7 +502,6 @@ def handle_endpoll(ack, body, say):
                                                                                              f"has been deactivated.")
         else:
             app.client.chat_postEphemeral(channel=channel_id, user=body['user_id'], text=f"No active poll found with ID: {poll_id}.")
-
 
 @app.event("reaction_added")
 def handle_reaction_added(ack, body):
