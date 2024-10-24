@@ -174,3 +174,1034 @@ INFO:__main__:Update limit reached. Skipping update.
 INFO:__main__:Update limit reached. Skipping update.
 INFO:__main__:Update limit reached. Skipping update.
 INFO:__main__:Update limit reached. Skipping update.
+INFO:__main__:Started
+WARNING:slack_bolt.App:Unhandled request ({'type': None, 'command': '/createpoll'})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.command("/createpoll")
+def handle_some_command(ack, body, logger):
+    ack()
+    logger.info(body)
+
+INFO:__main__:Started
+WARNING:slack_bolt.App:Unhandled request ({'type': None, 'command': '/createpoll'})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.command("/createpoll")
+def handle_some_command(ack, body, logger):
+    ack()
+    logger.info(body)
+
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 273, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+ERROR:slack_bolt.App:Failed to run listener function (error: say without channel_id here is unsupported)
+Traceback (most recent call last):
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 356, in handle_poll_submission
+    say(f"Poll created by <@{user_id}> (ID: {poll_id}): {question}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 359, in handle_poll_submission
+    say(f"Error: {e}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+INFO:__mp_main__:Started
+INFO:__main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: say without channel_id here is unsupported)
+Traceback (most recent call last):
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 356, in handle_poll_submission
+    say(f"Poll created by <@{user_id}> (ID: {poll_id}): {question}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 359, in handle_poll_submission
+    say(f"Error: {e}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+INFO:__mp_main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: say without channel_id here is unsupported)
+Traceback (most recent call last):
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 356, in handle_poll_submission
+    say(f"Poll created by <@{user_id}> (ID: {poll_id}): {question}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 359, in handle_poll_submission
+    say(f"Error: {e}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+INFO:__mp_main__:Started
+INFO:__main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: say without channel_id here is unsupported)
+Traceback (most recent call last):
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 356, in handle_poll_submission
+    say(f"Poll created by <@{user_id}> (ID: {poll_id}): {question}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 359, in handle_poll_submission
+    say(f"Error: {e}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+INFO:__mp_main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: say without channel_id here is unsupported)
+Traceback (most recent call last):
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 356, in handle_poll_submission
+    say(f"Poll created by <@{user_id}> (ID: {poll_id}): {question}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 359, in handle_poll_submission
+    say(f"Error: {e}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+INFO:__mp_main__:Started
+INFO:__main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: say without channel_id here is unsupported)
+Traceback (most recent call last):
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 356, in handle_poll_submission
+    say(f"Poll created by <@{user_id}> (ID: {poll_id}): {question}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 359, in handle_poll_submission
+    say(f"Error: {e}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+INFO:__mp_main__:Started
+INFO:__main__:Started
+WARNING:slack_bolt.App:Received an unexpected response for handshake (status: 409, response: HTTP/1.1 409 Conflict
+via: envoy-wss-cmh-gmhctqfp,envoy-wss-iad-afufngjf
+date: Thu, 24 Oct 2024 21:33:54 GMT
+server: envoy
+connection: close
+content-length: 0, session id: 008c4a79-a804-45db-a15e-7e1f38224976)
+ERROR:slack_bolt.App:Failed to run listener function (error: say without channel_id here is unsupported)
+Traceback (most recent call last):
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 356, in handle_poll_submission
+    say(f"Poll created by <@{user_id}> (ID: {poll_id}): {question}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 359, in handle_poll_submission
+    say(f"Error: {e}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+INFO:__mp_main__:Started
+INFO:__main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 273, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 273, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+ERROR:slack_bolt.App:Failed to run listener function (error: say without channel_id here is unsupported)
+Traceback (most recent call last):
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 356, in handle_poll_submission
+    say(f"Poll created by <@{user_id}> (ID: {poll_id}): {question}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 359, in handle_poll_submission
+    say(f"Error: {e}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+INFO:__mp_main__:Started
+INFO:__main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: say without channel_id here is unsupported)
+Traceback (most recent call last):
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 358, in handle_poll_submission
+    say(f"Poll created by <@{user_id}> (ID: {poll_id}): {question}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 361, in handle_poll_submission
+    say(f"Error: {e}")
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\context\say\say.py", line 76, in __call__
+    raise ValueError("say without channel_id here is unsupported")
+ValueError: say without channel_id here is unsupported
+INFO:__mp_main__:Started
+INFO:__main__:Started
+WARNING:slack_bolt.App:Received an unexpected response for handshake (status: 409, response: HTTP/1.1 409 Conflict
+via: envoy-wss-cmh-oaixyyxx,envoy-wss-iad-vlzcvrpi
+date: Thu, 24 Oct 2024 21:51:34 GMT
+server: envoy
+connection: close
+content-length: 0, session id: 9f06c7c0-434b-4312-a033-101b4395fb1c)
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 92, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 92, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+INFO:main.py:handle_poll_submission:Selected channel ID: C07NBTGJ97A
+ERROR:main.py:handle_poll_submission:Error creating poll: name 'create_poll' is not defined
+INFO:main.py:handle_poll_submission:Selected channel ID: C07NBTGJ97A
+ERROR:main.py:handle_poll_submission:Error creating poll: name 'create_poll' is not defined
+INFO:__main__:Started
+INFO:__main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 254, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+INFO:main.py:handle_poll_submission:Selected channel ID: C07NBTGJ97A
+INFO:main.py:handle_poll_submission:Poll created: ewahuooiaerwj
+INFO:__mp_main__:Started
+INFO:main.py:handle_poll_submission:Selected channel ID: C07NBTGJ97A
+INFO:main.py:handle_poll_submission:Poll created: ewahuooiaerwj
+INFO:__mp_main__:Started
+INFO:main.py:handle_poll_submission:Selected channel ID: C07NBTGJ97A
+INFO:main.py:handle_poll_submission:Poll created: ewahuooiaerwj
+INFO:__mp_main__:Started
+INFO:main.py:handle_poll_submission:Selected channel ID: C07NBTGJ97A
+INFO:main.py:handle_poll_submission:Poll created: ewahuooiaerwj
+INFO:__mp_main__:Started
+WARNING:slack_bolt.App:Unhandled request ({'type': 'event_callback', 'event': {'type': 'reaction_added'}})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.event("reaction_added")
+def handle_reaction_added_events(body, logger):
+    logger.info(body)
+
+WARNING:slack_bolt.App:Unhandled request ({'type': 'event_callback', 'event': {'type': 'reaction_added'}})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.event("reaction_added")
+def handle_reaction_added_events(body, logger):
+    logger.info(body)
+
+INFO:__main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 254, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 254, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 254, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 254, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+INFO:__main__:Started
+WARNING:slack_bolt.App:Unhandled request ({'type': 'event_callback', 'event': {'type': 'reaction_added'}})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.event("reaction_added")
+def handle_reaction_added_events(body, logger):
+    logger.info(body)
+
+INFO:main.py:handle_poll_submission:Selected channel ID: C07NBTGJ97A
+INFO:main.py:handle_poll_submission:Poll created: aweriojaorwei
+INFO:__mp_main__:Started
+WARNING:slack_bolt.App:Unhandled request ({'type': 'event_callback', 'event': {'type': 'reaction_added'}})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.event("reaction_added")
+def handle_reaction_added_events(body, logger):
+    logger.info(body)
+
+WARNING:slack_bolt.App:Unhandled request ({'type': 'event_callback', 'event': {'type': 'reaction_added'}})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.event("reaction_added")
+def handle_reaction_added_events(body, logger):
+    logger.info(body)
+
+WARNING:slack_bolt.App:Unhandled request ({'type': 'event_callback', 'event': {'type': 'reaction_added'}})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.event("reaction_added")
+def handle_reaction_added_events(body, logger):
+    logger.info(body)
+
+WARNING:slack_bolt.App:Unhandled request ({'type': 'event_callback', 'event': {'type': 'reaction_added'}})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.event("reaction_added")
+def handle_reaction_added_events(body, logger):
+    logger.info(body)
+
+WARNING:slack_bolt.App:Unhandled request ({'type': 'event_callback', 'event': {'type': 'reaction_added'}})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.event("reaction_added")
+def handle_reaction_added_events(body, logger):
+    logger.info(body)
+
+WARNING:slack_bolt.App:Unhandled request ({'type': 'event_callback', 'event': {'type': 'reaction_added'}})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.event("reaction_added")
+def handle_reaction_added_events(body, logger):
+    logger.info(body)
+
+WARNING:slack_bolt.App:Unhandled request ({'type': 'event_callback', 'event': {'type': 'reaction_added'}})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.event("reaction_added")
+def handle_reaction_added_events(body, logger):
+    logger.info(body)
+
+INFO:__main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 267, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+INFO:main.py:handle_poll_submission:Poll created: ewaiuhruaehiw
+INFO:__mp_main__:Started
+WARNING:slack_bolt.App:Unhandled request ({'type': 'event_callback', 'event': {'type': 'reaction_added'}})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.event("reaction_added")
+def handle_reaction_added_events(body, logger):
+    logger.info(body)
+
+INFO:__main__:Started
+INFO:__mp_main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 370, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+INFO:main.py:handle_poll_submission:Poll created: efrwewar
+INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1729807710.878769', 'options': ['eraw', 'arwe', 'awre'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1729807711.4250522, 'duration': 1, 'option_count': 1}}
+WARNING:slack_bolt.App:Unhandled request ({'type': 'shortcut', 'callback_id': 'end_poll'})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.shortcut("end_poll")
+def handle_shortcuts(ack, body, logger):
+    ack()
+    logger.info(body)
+
+WARNING:slack_bolt.App:Unhandled request ({'type': 'shortcut', 'callback_id': 'end_poll'})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.shortcut("end_poll")
+def handle_shortcuts(ack, body, logger):
+    ack()
+    logger.info(body)
+
+INFO:__main__:Started
+INFO:__mp_main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 370, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+INFO:main.py:handle_poll_submission:Poll created: eraw7hraiu
+INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1729807899.788719', 'options': ['aewrawer', 'erawaerw', 'awre'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1729807900.3843246, 'duration': 1, 'option_count': 1}}
+INFO:main.py:handle_poll_submission:Poll created: eraw7hraiu
+INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1729807899.788719', 'options': ['aewrawer', 'erawaerw', 'awre'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1729807900.3843246, 'duration': 1, 'option_count': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1729807912.370239', 'options': ['aewrawer', 'erawaerw', 'awre'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1729807912.9356608, 'duration': 1, 'option_count': 1}}
+WARNING:slack_bolt.App:Unhandled request ({'type': 'shortcut', 'callback_id': 'end_poll'})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.shortcut("end_poll")
+def handle_shortcuts(ack, body, logger):
+    ack()
+    logger.info(body)
+
+WARNING:slack_bolt.App:Unhandled request ({'type': 'shortcut', 'callback_id': 'end_poll'})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.shortcut("end_poll")
+def handle_shortcuts(ack, body, logger):
+    ack()
+    logger.info(body)
+
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 370, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 370, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+INFO:main.py:handle_poll_submission:Poll created: ewarerwa
+INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1729808015.944609', 'options': ['arwe', 'raew', 'raew'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1729808016.5358732, 'duration': 1, 'option_count': 1}}
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:main.py:handle_poll_submission:Poll created: erwaaerwa
+INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1729808059.271439', 'options': ['raew', 'arew', 'awre'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1729808059.8797102, 'duration': 1, 'option_count': 1}}
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: name 'end_poll' is not defined)
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 489, in handle_end_poll
+    end_poll(channel_id, poll_id, polls)
+    ^^^^^^^^
+NameError: name 'end_poll' is not defined
+ERROR:slack_bolt.App:Failed to run listener function (error: name 'end_poll' is not defined)
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 489, in handle_end_poll
+    end_poll(channel_id, poll_id, polls)
+    ^^^^^^^^
+NameError: name 'end_poll' is not defined
+WARNING:slack_bolt.App:handle_end_poll didn't call ack()
+WARNING:slack_bolt.App:Unhandled request ({'type': None, 'command': '/endpoll'})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.command("/endpoll")
+def handle_some_command(ack, body, logger):
+    ack()
+    logger.info(body)
+
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 379, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:main.py:handle_poll_submission:Poll created: skkasd
+INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1729808364.804979', 'options': ['aerwrawe', 'rewa', 'raew'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1729808365.3826778, 'duration': 1, 'option_count': 1}}
+INFO:main.py:handle_poll_submission:Poll created: eqw3rew
+INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1729808364.804979', 'options': ['aerwrawe', 'rewa', 'raew'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1729808365.3826778, 'duration': 1, 'option_count': 1}, 1: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1729808410.356569', 'options': ['rewa', 'aerw', 'aerw'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1729808410.9040706, 'duration': 1, 'option_count': 1}}
+ERROR:slack_bolt.App:Failed to run listener function (error: name 'end_poll' is not defined)
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 489, in handle_end_poll
+    end_poll(channel_id, poll_id, polls)
+    ^^^^^^^^
+NameError: name 'end_poll' is not defined
+WARNING:slack_bolt.App:handle_end_poll didn't call ack()
+WARNING:slack_bolt.App:Unhandled request ({'type': None, 'command': '/endpoll'})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.command("/endpoll")
+def handle_some_command(ack, body, logger):
+    ack()
+    logger.info(body)
+
+ERROR:slack_bolt.App:Failed to run listener function (error: name 'end_poll' is not defined)
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 489, in handle_end_poll
+    end_poll(channel_id, poll_id, polls)
+    ^^^^^^^^
+NameError: name 'end_poll' is not defined
+WARNING:slack_bolt.App:handle_end_poll didn't call ack()
+WARNING:slack_bolt.App:Unhandled request ({'type': None, 'command': '/endpoll'})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.command("/endpoll")
+def handle_some_command(ack, body, logger):
+    ack()
+    logger.info(body)
+
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:__main__:Started
+INFO:__mp_main__:Started
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 379, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+ERROR:slack_bolt.App:Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'})
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 379, in open_create_poll_modal
+    client.views_open(
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\client.py", line 5287, in views_open
+    return self.api_call("views.open", json=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 157, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 188, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\base_client.py", line 319, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_sdk\web\slack_response.py", line 199, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/views.open)
+The server responded with: {'ok': False, 'error': 'expired_trigger_id'}
+INFO:main.py:handle_poll_submission:Poll created: create
+INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1729808522.017519', 'options': ['poll', 'xd'], 'emojis': ['one', 'two'], 'results': {}, 'max_mentions': 1, 'start_time': 1729808522.3591633, 'duration': 1, 'option_count': 1}}
+ERROR:slack_bolt.App:Failed to run listener function (error: name 'end_poll' is not defined)
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 489, in handle_end_poll
+    end_poll(channel_id, poll_id, polls)
+    ^^^^^^^^
+NameError: name 'end_poll' is not defined
+WARNING:slack_bolt.App:handle_end_poll didn't call ack()
+WARNING:slack_bolt.App:Unhandled request ({'type': None, 'command': '/endpoll'})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.command("/endpoll")
+def handle_some_command(ack, body, logger):
+    ack()
+    logger.info(body)
+
+ERROR:slack_bolt.App:Failed to run listener function (error: name 'end_poll' is not defined)
+Traceback (most recent call last):
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\tsung\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\slack_bolt\listener\custom_listener.py", line 50, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tsung\PycharmProjects\1325-signup-\main.py", line 489, in handle_end_poll
+    end_poll(channel_id, poll_id, polls)
+    ^^^^^^^^
+NameError: name 'end_poll' is not defined
+WARNING:slack_bolt.App:handle_end_poll didn't call ack()
+WARNING:slack_bolt.App:Unhandled request ({'type': None, 'command': '/endpoll'})
+---
+[Suggestion] You can handle this type of event with the following listener function:
+
+@app.command("/endpoll")
+def handle_some_command(ack, body, logger):
+    ack()
+    logger.info(body)
+
+INFO:__main__:Started
+INFO:__mp_main__:Started
+INFO:__mp_main__:Started
+INFO:main.py:handle_poll_submission:Poll created: erwaerwa
+INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1729808616.906279', 'options': ['aerw', 'aerw', 'arew'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 1, 'start_time': 1729808617.452253, 'duration': 1, 'option_count': 1}}
+INFO:main.py:handle_poll_submission:Poll created: fdsa
+INFO:__mp_main__:Started
+INFO:__mp_main__:create poll {0: {'active': True, 'channel_id': 'C07NBTGJ97A', 'timestamp': '1729808807.796329', 'options': ['fawe', 'afwe', 'afwe'], 'emojis': ['one', 'two', 'three'], 'results': {}, 'max_mentions': 2, 'start_time': 1729808808.3535304, 'duration': -1, 'option_count': -1}}
